@@ -32,15 +32,15 @@ dataset = {
     }
 
 }
-# def getNames(dataset, keys):
-#     if keys==[]:
-#         return
-#     key = keys[0]
-#     name = dataset[key]["human"]["name"]
-#     print(name)
-#     getNames(dataset, keys[1:])
-# getNames(dataset,list(dataset.keys()))
-#
+def getNames(dataset, keys):
+    if keys==[]:
+        return
+    key = keys[0]
+    name = dataset[key]["human"]["name"]
+    print(name)
+    getNames(dataset, keys[1:])
+getNames(dataset,list(dataset.keys()))
+
 for key in list(dataset.keys()):
     humanName = dataset[key]["human"]["name"]
 
